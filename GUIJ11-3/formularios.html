@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Formularios</title>
+<link href="style_page.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+    <header>
+        <h1>Formulario 1</h1>
+    </header>
+    <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="lasima.html">Imagenes</a></li>
+                <li><a href="laudio.html">Audio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+             <section class="3">
+            <h2>Formulario  de ingreso</h2>
+                <p>Hola! por favor ingresa tu usuario y contraseña para ingresar a este sitio.</p>
+				  <form name="form1" method="get" action="index.html" id="form1">
+               		<label form="textfield">USUARIO:</label>
+            		<input name="usuario" type="text" id="usuario" size="10" maxlength="20">
+            		<label for="password">CONTRASEÑA:</label>
+            		<input name="password" type="password" id="password" size="10" maxlength="20">
+            		<input type="submit" name="submit" id="submit" value="Enviar">
+
+             </form> 
+            </section>
+            
+			<section>
+            <h2>Formulario 2</h2>
+                <p><l>Por favor, responde el siguiente formulario para brindarte la mejor experiencia...</l></p>
+                <form name="form2" method="post" action="index.html" id="form2">
+                  <label for="nombre">NOMBRE:</label>
+                  <input name="nombre" type="text" id="nombre" size="10" maxlength="20">
+                  <label for="apellidos">APELLIDO:</label>
+                  <input name="apellidos" type="text" id="apellidos" size="10" maxlength="20">
+                  <label for="edad">EDAD:</label>
+                  <input name="number" type="number" id="number" max="100" min="18">
+                  <label for="dedicacion">¿QUÉ ERES?:</label>
+                  <select name="dedicacion" id="dedicacion">
+                    <option value="estudiante">ESTUDIANTE</option>
+                    <option value="docente">DOCENTE</option>
+                    <option value="investigador">INVESTIGADOR</option>
+                    <option value="otro">Otro...</option>
+                  </select>
+                  <label>GÉNERO:&nbsp;</label>
+                  <p>
+                    <label>
+                      <input type="radio" name="GEN" value="masculino" id="GEN_0">
+                      MASCULINO</label>
+                    <br>
+                    <label>
+                      <input type="radio" name="GEN" value="femenino" id="GEN_1">
+                      FEMENINO</label>
+                    <br>
+                  </p>
+                  <p>
+                    <label id="pop">
+                      <label>¿Qué géneros musicales haz escuchado más?</label>
+                      <input type="checkbox" name="musica" value="pop" id="musica_0">
+                      POP</label>
+                    <br>
+                    <label>
+                      <input type="checkbox" name="musica" value="ranchera" id="musica_1">
+                      RANCHERA</label>
+                    <br>
+                    <label id="lab">
+                      <input type="checkbox" name="musica" value="bachata" id="musica_2">
+                      BACHATA</label>
+                    <br>
+                  </p>
+                  <input type="submit" name="submit2" id="submit2" value="Enviar">
+                </form>	
+            </section>
+            
+			<section>
+            <h2>10 preguntas para ti...</h2>
+<p>Por favor, contesta las siguientes preguntas para saber más sobre ti...</p>
+<form name="form3" method="get" action="index.html" id="form3">
+  <label for="email">Email:</label>
+  <input name="email" type="email" id="email" size="10" maxlength="20">
+  <label for="tel">Tel:</label>
+  <input type="tel" name="tel" id="tel">
+  <label for="date">¿En qué fecha respondes este cuestionario?:</label>
+  <input type="date" name="date" id="date">
+<label for="number2">¿Cuántas veces haz recursado?:</label>
+  <input name="number2" type="number" id="number2" max="5" min="0">
+  <label for="range">¿Cómo calificas tu experiencia en tu escuela?:</label>
+  <input name="range" type="range" id="range" max="4" min="1">
+  <label for="select">¿Qué tipo de solicitud desea realizar?:</label>
+  <select name="select" id="select">
+    <option value="incripcion">INCRIPCIÓN</option>
+    <option value="baja de materias">BAJA DE MATERIAS</option>
+    <option value="recursodem">RECURSO DE MATERIAS</option>
+  </select>
+<label for="fileField">Envía tus documentos solicitados de un peso menor a 500 KB:</label>
+  <input type="file" name="fileField" id="fileField">
+  <label for="textfield">¿Quieres agregar un comentario?:</label>
+  <input name="textfield" type="text" id="textfield" size="10" maxlength="300">
+  <label>Da click en el icono para descargar un regalo</label>
+  <input name="imageField" alt="taco" type="image" id="imageta" formaction="Audio.html" src="image/taquito.png">
+<input type="submit" name="submit3" id="submit3" value="Enviar">
+</form>
+</section>
+        </main>
+    <footer><h5>Elaborado por Sharon I. Krassel Carrera</h5></footer>
+</body>
+</html>
